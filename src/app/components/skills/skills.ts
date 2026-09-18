@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SectionHeader } from '../section-header/section-header';
 
 interface SkillGroup {
   title: string;
@@ -7,7 +8,7 @@ interface SkillGroup {
 
 @Component({
   selector: 'app-skills',
-  imports: [],
+  imports: [SectionHeader],
   templateUrl: './skills.html',
   styleUrl: './skills.scss'
 })

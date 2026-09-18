@@ -1,0 +1,29 @@
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 48px;
+
+  span {
+    font-size: 0.8rem;
+    color: #999;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+}
+
+.section-label.dark {
+  span {
+    color: #666;
+  }
+
+  p {
+    color: #fff;
+  }
+}

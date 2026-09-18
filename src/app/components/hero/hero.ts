@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PROFILE } from '../../data/profile.data';
 
 @Component({
   imports: [],
@@ -6,4 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './hero.scss',
   templateUrl: './hero.html',
 })
-export class Hero {}
+export class Hero {
+  profile = PROFILE;
+
+}

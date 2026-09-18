@@ -1,6 +1,10 @@
 <nav class="navbar">
 
-  <a class="logo" href="#">
+  <a
+    class="logo"
+    href="#"
+    (click)="closeMenu()"
+  >
     Varsha.
   </a>
 
@@ -11,5 +15,45 @@
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </div>
+
+  <button
+    class="menu-button"
+    type="button"
+    aria-label="Toggle navigation menu"
+    [attr.aria-expanded]="menuOpen()"
+    (click)="toggleMenu()"
+  >
+    @if (menuOpen()) {
+      <span>✕</span>
+    } @else {
+      <span>☰</span>
+    }
+  </button>
+
+  @if (menuOpen()) {
+    <div class="mobile-menu">
+
+      <a href="#about" (click)="closeMenu()">
+        About
+      </a>
+
+      <a href="#experience" (click)="closeMenu()">
+        Experience
+      </a>
+
+      <a href="#projects" (click)="closeMenu()">
+        Projects
+      </a>
+
+      <a href="#skills" (click)="closeMenu()">
+        Skills
+      </a>
+
+      <a href="#contact" (click)="closeMenu()">
+        Contact
+      </a>
+
+    </div>
+  }
 
 </nav>

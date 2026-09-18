@@ -1,0 +1,63 @@
+<section class="contact" id="contact">
+
+  <app-section-header
+    number="05"
+    title="Contact"
+    [dark]="true"
+  />
+
+  <div class="contact-content">
+
+    <div>
+
+      <p class="availability">
+        Open to opportunities
+      </p>
+
+      <h2>
+        Have an opportunity
+        <span>worth discussing?</span>
+      </h2>
+
+    </div>
+
+    <div class="contact-info">
+
+      <p>
+        I'm currently exploring Frontend Engineer and Angular-focused
+        opportunities where I can contribute to scalable,
+        product-focused applications.
+      </p>
+
+      <div class="contact-links">
+
+        <a [href]="'mailto:' + profile.socialLinks.email">
+          <span>Email me</span>
+          <span>↗</span>
+        </a>
+
+        <a
+          [href]="profile.socialLinks.linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>LinkedIn</span>
+          <span>↗</span>
+        </a>
+
+        <a
+          [href]="profile.socialLinks.github"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>GitHub</span>
+          <span>↗</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

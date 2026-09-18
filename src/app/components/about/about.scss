@@ -3,39 +3,25 @@
   border-top: 1px solid #eee;
 }
 
-.section-label {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 48px;
-
-  span {
-    font-size: 0.8rem;
-    color: #999;
-  }
-
-  p {
-    margin: 0;
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-  }
-}
-
 .about-content {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 80px;
+  gap: 100px;
+}
 
+.about-heading {
   h2 {
     margin: 0;
-    font-size: clamp(2rem, 4vw, 3.5rem);
-    line-height: 1.15;
-    letter-spacing: -0.03em;
+    max-width: 750px;
+
+    font-size: clamp(2.4rem, 4vw, 4rem);
+    line-height: 1.1;
+    letter-spacing: -0.04em;
 
     span {
+      display: block;
       color: #777;
+      font-weight: 400;
     }
   }
 }
@@ -43,19 +29,93 @@
 .about-description {
   p {
     margin: 0 0 24px;
+
+    color: #555;
     font-size: 1.05rem;
     line-height: 1.8;
-    color: #555;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
-@media (max-width: 800px) {
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  margin-top: 96px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.stat {
+  padding: 28px 24px 28px 0;
+  border-right: 1px solid #ddd;
+
+  &:not(:first-child) {
+    padding-left: 24px;
+  }
+
+  &:last-child {
+    border-right: 0;
+  }
+
+  strong {
+    display: block;
+    margin-bottom: 8px;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  span {
+    color: #777;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 900px) {
   .about {
     padding: 80px 24px;
   }
 
   .about-content {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 48px;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 64px;
+  }
+
+  .stat {
+    border-bottom: 1px solid #ddd;
+
+    &:nth-child(2) {
+      border-right: 0;
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      border-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat {
+    padding: 20px 0 !important;
+    border-right: 0;
+    border-bottom: 1px solid #ddd !important;
+
+    &:last-child {
+      border-bottom: 0 !important;
+    }
   }
 }

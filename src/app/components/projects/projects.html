@@ -1,21 +1,23 @@
 <section class="projects" id="projects">
 
-  <div class="section-label">
-    <span>03</span>
-    <p>Selected Work</p>
-  </div>
+  <app-section-header
+    number="03"
+    title="Selected Work"
+  />
 
   <div class="projects-header">
+
     <h2>
-      Projects I've
-      <span>worked on.</span>
+      Engineering work
+      <span>I'm proud of.</span>
     </h2>
 
     <p>
-      A selection of professional engineering work involving
-      enterprise frontend development, application platforms,
-      and AI-powered experiences.
+      Selected work across enterprise frontend engineering,
+      low-code application platforms, Generative AI,
+      and cross-framework integrations.
     </p>
+
   </div>
 
   <div class="project-list">
@@ -24,7 +26,7 @@
 
       <article class="project-card">
 
-        <div class="project-top">
+        <div class="project-sidebar">
 
           <span class="project-number">
             {{ project.number }}
@@ -36,22 +38,54 @@
 
         </div>
 
-        <h3>{{ project.title }}</h3>
+        <div class="project-content">
 
-        <p class="project-description">
-          {{ project.description }}
-        </p>
+          <h3>
+            {{ project.title }}
+          </h3>
 
-        <div class="contribution">
-          <h4>My Contribution</h4>
-          <p>{{ project.contribution }}</p>
-        </div>
+          <p class="project-description">
+            {{ project.description }}
+          </p>
 
-        <div class="technologies">
+          <div class="project-details">
 
-          @for (technology of project.technologies; track technology) {
-            <span>{{ technology }}</span>
-          }
+            <div class="contribution">
+              <p class="detail-label">
+                My Contribution
+              </p>
+
+              <p>
+                {{ project.contribution }}
+              </p>
+            </div>
+
+            <div class="focus">
+
+              <p class="detail-label">
+                Engineering Focus
+              </p>
+
+              <ul>
+                @for (item of project.focus; track item) {
+                  <li>{{ item }}</li>
+                }
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="technologies">
+
+            @for (
+              technology of project.technologies;
+              track technology
+            ) {
+              <span>{{ technology }}</span>
+            }
+
+          </div>
 
         </div>
 

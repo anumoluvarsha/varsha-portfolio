@@ -2,37 +2,71 @@
 
   <div class="hero-content">
 
-    <p class="intro">Hi, I'm Varsha 👋</p>
+    <div class="status">
+      <span class="status-dot"></span>
+      Open to frontend opportunities
+    </div>
+
+    <p class="intro">
+      Hi, I'm Varsha.
+    </p>
 
     <h1>
-      Frontend Engineer
-      <span>specializing in Angular.</span>
+      I build scalable
+      <span>frontend experiences.</span>
     </h1>
 
     <p class="description">
-      I build scalable enterprise applications and modern,
-      user-focused digital experiences using Angular,
-      TypeScript, and modern frontend technologies.
+      Frontend Engineer with around 5 years of experience specializing
+      in Angular, TypeScript, and enterprise web applications.
     </p>
 
     <div class="hero-actions">
-      <a href="#projects" class="primary-button">
+
+      <a
+        href="#projects"
+        class="primary-button"
+      >
         View My Work
+        <span>↓</span>
       </a>
 
-      <a href="/resume.pdf" class="secondary-button" download>
+      <a
+        [href]="profile.resume"
+        class="secondary-button"
+        download
+      >
         Download Resume
       </a>
+
     </div>
 
-    <div class="social-links">
-      <a href="#" aria-label="LinkedIn">
-        LinkedIn
-      </a>
+    <div class="hero-footer">
 
-      <a href="#" aria-label="GitHub">
-        GitHub
-      </a>
+      <div class="social-links">
+
+        <a
+          [href]="profile.socialLinks.linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn ↗
+        </a>
+
+        <a
+          [href]="profile.socialLinks.github"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub ↗
+        </a>
+
+      </div>
+
+      <p class="specialization">
+        Angular · TypeScript · RxJS
+      </p>
+
     </div>
 
   </div>
