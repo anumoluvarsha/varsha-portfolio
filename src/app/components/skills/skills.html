@@ -1,0 +1,63 @@
+<section class="skills" id="skills">
+
+  <div class="section-label">
+    <span>04</span>
+    <p>Skills</p>
+  </div>
+
+  <div class="skills-header">
+    <h2>
+      Technologies I
+      <span>work with.</span>
+    </h2>
+
+    <p>
+      My primary focus is modern frontend engineering with Angular
+      and TypeScript, supported by experience across application
+      development, deployment, and product engineering.
+    </p>
+  </div>
+
+  <div class="skill-groups">
+
+    @for (group of skillGroups; track group.title) {
+
+      <div class="skill-group">
+
+        <h3>{{ group.title }}</h3>
+
+        <div class="skill-list">
+
+          @for (skill of group.skills; track skill) {
+            <span>{{ skill }}</span>
+          }
+
+        </div>
+
+      </div>
+
+    }
+
+  </div>
+
+  <div class="exploring">
+
+    <div>
+      <p class="exploring-label">Currently exploring</p>
+
+      <h3>
+        Expanding beyond frontend specialization.
+      </h3>
+    </div>
+
+    <div class="exploring-skills">
+
+      @for (skill of exploring; track skill) {
+        <span>{{ skill }}</span>
+      }
+
+    </div>
+
+  </div>
+
+</section>
