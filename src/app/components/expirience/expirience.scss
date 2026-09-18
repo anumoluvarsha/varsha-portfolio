@@ -1,0 +1,121 @@
+.experience {
+  padding: 120px 8%;
+  border-top: 1px solid #eee;
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 48px;
+
+  span {
+    font-size: 0.8rem;
+    color: #999;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+}
+
+.experience-header {
+  margin-bottom: 64px;
+
+  h2 {
+    margin: 0;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    letter-spacing: -0.04em;
+  }
+}
+
+.experience-item {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 80px;
+}
+
+.experience-meta {
+  .company {
+    margin: 0 0 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .duration {
+    margin: 0;
+    color: #777;
+  }
+}
+
+.experience-details {
+  max-width: 850px;
+
+  h3 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+}
+
+.summary {
+  margin: 20px 0 48px;
+  max-width: 700px;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.highlight {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+
+  h4 {
+    margin: 0 0 12px;
+    font-size: 1rem;
+  }
+
+  p {
+    margin: 0;
+    color: #666;
+    line-height: 1.7;
+  }
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 48px;
+
+  span {
+    padding: 8px 14px;
+    background: #f5f5f5;
+    border-radius: 100px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .experience {
+    padding: 80px 24px;
+  }
+
+  .experience-item {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .highlights {
+    grid-template-columns: 1fr;
+  }
+}
