@@ -1,0 +1,64 @@
+<section class="projects" id="projects">
+
+  <div class="section-label">
+    <span>03</span>
+    <p>Selected Work</p>
+  </div>
+
+  <div class="projects-header">
+    <h2>
+      Projects I've
+      <span>worked on.</span>
+    </h2>
+
+    <p>
+      A selection of professional engineering work involving
+      enterprise frontend development, application platforms,
+      and AI-powered experiences.
+    </p>
+  </div>
+
+  <div class="project-list">
+
+    @for (project of projects; track project.number) {
+
+      <article class="project-card">
+
+        <div class="project-top">
+
+          <span class="project-number">
+            {{ project.number }}
+          </span>
+
+          <span class="project-type">
+            {{ project.type }}
+          </span>
+
+        </div>
+
+        <h3>{{ project.title }}</h3>
+
+        <p class="project-description">
+          {{ project.description }}
+        </p>
+
+        <div class="contribution">
+          <h4>My Contribution</h4>
+          <p>{{ project.contribution }}</p>
+        </div>
+
+        <div class="technologies">
+
+          @for (technology of project.technologies; track technology) {
+            <span>{{ technology }}</span>
+          }
+
+        </div>
+
+      </article>
+
+    }
+
+  </div>
+
+</section>
