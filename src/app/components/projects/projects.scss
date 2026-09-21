@@ -1,6 +1,9 @@
 .projects {
+  background:
+    radial-gradient(ellipse at 100% 0%, rgba(187, 210, 242, 0.4), transparent 45%),
+    var(--color-tint);
   padding: 120px 8%;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--color-border);
 }
 
 .projects-header {
@@ -19,7 +22,7 @@
 
     span {
       display: block;
-      color: #777;
+      color: var(--color-muted);
       font-weight: 400;
     }
   }
@@ -28,14 +31,14 @@
     max-width: 550px;
     margin: 0;
 
-    color: #666;
+    color: var(--color-muted);
     font-size: 1.05rem;
     line-height: 1.8;
   }
 }
 
 .project-list {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--color-border);
 }
 
 .project-card {
@@ -44,7 +47,7 @@
   gap: 60px;
 
   padding: 56px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .project-sidebar {
@@ -55,17 +58,17 @@
 }
 
 .project-number {
-  color: #aaa;
+  color: var(--color-muted);
   font-size: 0.8rem;
 }
 
 .project-type {
   padding: 7px 12px;
 
-  background: #f4f4f4;
+  background: var(--color-badge);
   border-radius: 100px;
 
-  color: #555;
+  color: var(--color-muted);
   font-size: 0.75rem;
 }
 
@@ -84,7 +87,7 @@
   max-width: 750px;
   margin: 24px 0 0;
 
-  color: #555;
+  color: var(--color-muted);
   font-size: 1.05rem;
   line-height: 1.75;
 }
@@ -97,13 +100,13 @@
   margin-top: 48px;
   padding-top: 28px;
 
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--color-border);
 }
 
 .detail-label {
   margin: 0 0 14px !important;
 
-  color: #999 !important;
+  color: var(--color-muted) !important;
   font-size: 0.75rem !important;
   font-weight: 600;
   text-transform: uppercase;
@@ -115,7 +118,7 @@
     max-width: 650px;
     margin: 0;
 
-    color: #666;
+    color: var(--color-muted);
     line-height: 1.7;
   }
 }
@@ -133,7 +136,7 @@
 
     padding: 7px 0 7px 18px;
 
-    color: #555;
+    color: var(--color-muted);
     font-size: 0.9rem;
 
     &::before {
@@ -142,7 +145,7 @@
       position: absolute;
       left: 0;
 
-      color: #999;
+      color: var(--color-muted);
     }
   }
 }
@@ -157,10 +160,10 @@
   span {
     padding: 7px 12px;
 
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-border);
     border-radius: 100px;
 
-    color: #555;
+    color: var(--color-muted);
     font-size: 0.78rem;
   }
 }

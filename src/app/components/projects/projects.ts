@@ -18,27 +18,26 @@ interface Project {
   styleUrl: './projects.scss'
 })
 export class Projects {
-
   projects: Project[] = [
     {
       number: '01',
-      title: 'Low-Code / No-Code Application Designer',
+      title: 'VDesigner Low-Code Platform',
       type: 'Enterprise Product',
       description:
-        'An enterprise application development platform that enables users to visually configure and build applications using reusable UI components.',
+        'A drag-and-drop platform for building application screens and workflows from reusable, configurable components.',
       contribution:
-        'Developed and maintained Angular-based functionality, reusable components, complex configuration-driven workflows, API integrations, and frontend features across the application designer.',
+        'Engineered 20+ reusable Angular UI components, workflows, validation frameworks, and customer-facing features. Supported code reviews, testing, quality analysis, and CI/CD workflows.',
       focus: [
-        'Reusable UI architecture',
-        'Configuration-driven workflows',
-        'Reactive data handling'
+        'Reusable component architecture',
+        'Configurable workflows',
+        'Frontend quality and delivery'
       ],
       technologies: [
         'Angular',
         'TypeScript',
         'RxJS',
-        'SCSS',
         'Angular Material',
+        'SCSS',
         'REST APIs'
       ]
     },
@@ -47,42 +46,40 @@ export class Projects {
       title: 'AI-Powered Application Generation',
       type: 'Generative AI',
       description:
-        'A Generative AI-assisted workflow that helps users create application configurations from natural-language requirements.',
+        'A VDesigner workflow that turns natural-language requirements into application screens and workflows.',
       contribution:
-        'Worked on the frontend integration for prompt-based application generation, including validation, conversational workflows, generated configuration handling, and integration with the existing application designer.',
+        'Led AI-powered generation integration and implemented Claude LLM-assisted workflows with schema validation. Designed prompts, platform rules, and component metadata to produce renderable VDesigner JSON configurations.',
       focus: [
-        'AI-assisted workflows',
-        'Configuration generation',
-        'Frontend integration'
+        'Claude LLM integration',
+        'Prompt and platform rules',
+        'Schema-validated output'
       ],
       technologies: [
         'Angular',
         'TypeScript',
-        'Generative AI',
-        'REST APIs',
-        'JSON'
+        'Claude LLM',
+        'JSON Schema',
+        'REST APIs'
       ]
     },
     {
       number: '03',
-      title: 'Angular + Flutter Web Integration',
-      type: 'Platform Integration',
+      title: 'DataOn Flutter Runtime',
+      type: 'Cross-Platform',
       description:
-        'An Angular application shell designed to preload and embed a Flutter Web application to improve the perceived loading experience.',
+        'A Flutter-based application runtime with reusable framework components and platform integrations.',
       contribution:
-        'Implemented the Angular and Flutter Web integration, handled remote Flutter build assets and application initialization, and worked through loading, CORS, asset resolution, and deployment challenges.',
+        'Built dynamic forms, file management, camera services, QR/barcode scanning, and Firebase Authentication integrations. Improved quality through debugging, refactoring, testing, and SonarQube analysis.',
       focus: [
-        'Application preloading',
-        'Cross-framework integration',
-        'Deployment architecture'
+        'Reusable Flutter components',
+        'Device and platform services',
+        'Runtime quality'
       ],
       technologies: [
-        'Angular',
-        'Flutter Web',
-        'TypeScript',
+        'Flutter',
         'Dart',
-        'CanvasKit',
-        'Jenkins'
+        'Firebase Authentication',
+        'SonarQube'
       ]
     }
   ];

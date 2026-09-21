@@ -33,6 +33,8 @@ export class Skills {
         'Bootstrap',
         'Responsive Design',
         'REST APIs',
+        'Unit Testing',
+        'SonarQube',
         'Git',
         'Jira'
       ]
@@ -42,8 +44,10 @@ export class Skills {
       skills: [
         'Jenkins',
         'CI/CD',
-        'AWS',
+        'AWS RDS',
+        'Amazon S3',
         'PostgreSQL',
+        'Redis',
         'DBeaver',
         'Liquibase'
       ]
@@ -53,15 +57,16 @@ export class Skills {
       skills: [
         'Flutter',
         'Dart',
-        'Generative AI',
-        'AI-Assisted Development'
+        'Claude LLM',
+        'Prompt Engineering',
+        'JSON Schema Validation'
       ]
     }
   ];
 
   exploring: string[] = [
-    'Node.js',
-    'Express',
-    'React'
+    'Angular Architecture',
+    'AI Guardrails',
+    'Cross-Platform Development'
   ];
 }

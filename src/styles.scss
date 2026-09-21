@@ -1,3 +1,19 @@
+:root {
+  --color-page: #faf8f3;
+  --color-ink: #27272a;
+  --color-muted: #626269;
+  --color-accent: #446da3;
+  --color-accent-hover: #345783;
+  --color-tint: #eef3fa;
+  --color-badge: #e1ebf8;
+  --color-badge-hover: #d2e1f3;
+  --color-border: #d6dfeb;
+  --color-dark: #1d304e;
+  --color-on-dark: #faf8f3;
+  --color-dark-muted: #c0cee3;
+  --color-dark-border: #405574;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -14,11 +30,21 @@ body {
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
-  color: #111;
-  background: #fff;
+  color: var(--color-ink);
+  background: var(--color-page);
 }
 
 button,
 a {
   font-family: inherit;
+}
+::selection {
+  background: var(--color-badge);
+  color: var(--color-accent-hover);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 4px;
 }

@@ -1,11 +1,17 @@
 .experience {
   padding: 120px 8%;
-  background: #fafafa;
-  border-top: 1px solid #eee;
+  background:
+    linear-gradient(120deg, #e6eefb, #f2f5fb 65%, #eaf1fb);
+  border-top: 1px solid var(--color-border);
 }
 
 .experience-header {
   margin-bottom: 72px;
+
+  p {
+    margin: 18px 0 0;
+    color: var(--color-muted);
+  }
 
   h2 {
     margin: 0;
@@ -15,7 +21,7 @@
     letter-spacing: -0.04em;
 
     span {
-      color: #777;
+      color: var(--color-muted);
       font-weight: 400;
     }
   }
@@ -43,17 +49,16 @@
   height: 10px;
   flex-shrink: 0;
 
-  background: #111;
+  background: var(--color-accent);
   border-radius: 50%;
 }
 
 .timeline-line {
   width: 1px;
-  height: 100%;
-  min-height: 80px;
+  flex: 1;
   margin-top: 8px;
 
-  background: #ddd;
+  background: var(--color-border);
 }
 
 .company {
@@ -64,12 +69,17 @@
 
 .duration {
   margin: 0;
-  color: #777;
+  color: var(--color-muted);
   font-size: 0.9rem;
 }
 
 .experience-details {
   max-width: 900px;
+  padding-bottom: 72px;
+}
+
+.experience-item:last-child .experience-details {
+  padding-bottom: 0;
 }
 
 .role-header {
@@ -80,7 +90,7 @@
 
   h3 {
     margin: 0;
-    font-size: 1.8rem;
+    font-size: clamp(1.35rem, 2.5vw, 1.8rem);
     letter-spacing: -0.02em;
   }
 }
@@ -88,10 +98,10 @@
 .role-type {
   padding: 7px 12px;
 
-  background: #eee;
+  background: var(--color-border);
   border-radius: 100px;
 
-  color: #555;
+  color: var(--color-muted);
   font-size: 0.8rem;
 }
 
@@ -99,13 +109,13 @@
   max-width: 700px;
   margin: 20px 0 48px;
 
-  color: #555;
+  color: var(--color-muted);
   font-size: 1.05rem;
   line-height: 1.7;
 }
 
 .highlights {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--color-border);
 }
 
 .highlight {
@@ -114,11 +124,11 @@
   gap: 20px;
 
   padding: 28px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--color-border);
 
   > span {
     padding-top: 3px;
-    color: #999;
+    color: var(--color-muted);
     font-size: 0.75rem;
   }
 
@@ -131,7 +141,7 @@
     max-width: 720px;
     margin: 0;
 
-    color: #666;
+    color: var(--color-muted);
     line-height: 1.7;
   }
 }
@@ -146,11 +156,11 @@
   span {
     padding: 8px 13px;
 
-    background: #fff;
-    border: 1px solid #ddd;
+    background: var(--color-page);
+    border: 1px solid var(--color-border);
     border-radius: 100px;
 
-    color: #555;
+    color: var(--color-muted);
     font-size: 0.8rem;
   }
 }
@@ -162,11 +172,20 @@
 
   .experience-item {
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 0;
+    position: relative;
+    padding-left: 30px;
   }
 
-  .timeline-line {
-    min-height: 40px;
+  .timeline {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .experience-meta {
+    min-height: 72px;
   }
 }
 

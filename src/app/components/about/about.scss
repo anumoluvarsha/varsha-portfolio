@@ -1,6 +1,7 @@
 .about {
+  background: var(--color-page);
   padding: 120px 8%;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--color-border);
 }
 
 .about-content {
@@ -20,7 +21,7 @@
 
     span {
       display: block;
-      color: #777;
+      color: var(--color-muted);
       font-weight: 400;
     }
   }
@@ -30,7 +31,7 @@
   p {
     margin: 0 0 24px;
 
-    color: #555;
+    color: var(--color-muted);
     font-size: 1.05rem;
     line-height: 1.8;
 
@@ -43,23 +44,16 @@
 .about-stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
 
   margin-top: 96px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border: 1px solid var(--color-border);
+  background: var(--color-border);
 }
 
 .stat {
-  padding: 28px 24px 28px 0;
-  border-right: 1px solid #ddd;
-
-  &:not(:first-child) {
-    padding-left: 24px;
-  }
-
-  &:last-child {
-    border-right: 0;
-  }
+  padding: 28px 24px;
+  background: var(--color-page);
 
   strong {
     display: block;
@@ -70,7 +64,7 @@
   }
 
   span {
-    color: #777;
+    color: var(--color-muted);
     font-size: 0.8rem;
   }
 }
@@ -90,18 +84,6 @@
     margin-top: 64px;
   }
 
-  .stat {
-    border-bottom: 1px solid #ddd;
-
-    &:nth-child(2) {
-      border-right: 0;
-    }
-
-    &:nth-child(3),
-    &:nth-child(4) {
-      border-bottom: 0;
-    }
-  }
 }
 
 @media (max-width: 500px) {
@@ -110,12 +92,6 @@
   }
 
   .stat {
-    padding: 20px 0 !important;
-    border-right: 0;
-    border-bottom: 1px solid #ddd !important;
-
-    &:last-child {
-      border-bottom: 0 !important;
-    }
+    padding: 20px 24px;
   }
 }

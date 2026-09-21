@@ -6,7 +6,7 @@
   justify-content: space-between;
   position: sticky;
   top: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(250, 248, 243, 0.92);
   backdrop-filter: blur(12px);
   z-index: 100;
 }
@@ -14,7 +14,7 @@
 .logo {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #111;
+  color: var(--color-ink);
   text-decoration: none;
 }
 
@@ -24,17 +24,18 @@
 }
 
 .nav-links a {
-  color: #555;
+  color: var(--color-muted);
   text-decoration: none;
   font-size: 0.95rem;
   transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-  color: #111;
+  color: var(--color-accent);
 }
 
 .menu-button {
+  color: var(--color-ink);
   display: none;
   border: 0;
   background: transparent;
@@ -70,18 +71,18 @@
     flex-direction: column;
 
     padding: 24px;
-    background: #fff;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    background: var(--color-page);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
 
     box-shadow: 0 16px 30px rgba(0, 0, 0, 0.06);
 
     a {
       padding: 16px 0;
-      color: #111;
+      color: var(--color-ink);
       text-decoration: none;
       font-size: 1.1rem;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid var(--color-border);
 
       &:last-child {
         border-bottom: 0;

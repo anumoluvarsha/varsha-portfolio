@@ -1,6 +1,7 @@
 .skills {
+  background: var(--color-page);
   padding: 120px 8%;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--color-border);
 }
 
 .skills-header {
@@ -18,7 +19,7 @@
 
     span {
       display: block;
-      color: #777;
+      color: var(--color-muted);
       font-weight: 400;
     }
   }
@@ -27,14 +28,14 @@
     max-width: 550px;
     margin: 0;
 
-    color: #666;
+    color: var(--color-muted);
     font-size: 1.05rem;
     line-height: 1.8;
   }
 }
 
 .skill-groups {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--color-border);
 }
 
 .skill-group {
@@ -43,7 +44,7 @@
   gap: 60px;
 
   padding: 32px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--color-border);
 
   h3 {
     margin: 0;
@@ -60,10 +61,10 @@
   span {
     padding: 9px 14px;
 
-    background: #f5f5f5;
+    background: var(--color-badge);
     border-radius: 100px;
 
-    color: #444;
+    color: var(--color-muted);
     font-size: 0.85rem;
 
     transition:
@@ -71,7 +72,7 @@
       transform 0.2s ease;
 
     &:hover {
-      background: #eaeaea;
+      background: var(--color-badge-hover);
       transform: translateY(-1px);
     }
   }
@@ -86,8 +87,8 @@
   margin-top: 72px;
   padding: 48px;
 
-  background: #111;
-  color: #fff;
+  background: var(--color-dark);
+  color: var(--color-on-dark);
   border-radius: 16px;
 
   h3 {
@@ -103,7 +104,7 @@
 .exploring-label {
   margin: 0;
 
-  color: #888;
+  color: var(--color-dark-muted);
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -119,10 +120,10 @@
   span {
     padding: 8px 13px;
 
-    border: 1px solid #444;
+    border: 1px solid var(--color-dark-border);
     border-radius: 100px;
 
-    color: #ddd;
+    color: var(--color-dark-muted);
     font-size: 0.8rem;
   }
 }
